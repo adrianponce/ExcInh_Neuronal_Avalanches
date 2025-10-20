@@ -19,7 +19,8 @@ CONTENT
 
 To study the power-law distributions of neuronal avalanches, please download the MATLAB NCC (Neural Complexity and Criticality) Toolbox, from Marshall et al. (2016) https://doi.org/10.3389/fphys.2016.00250
 
-REFERENCES
+
+References
 
 Benayoun, M., Cowan, J.D., van Drongelen, W., and Wallace, E. (2010). Avalanches in a Stochastic Model of Spiking Neurons. PLoS Comput. Biol. 6, e1000846.
 Marshall, N., Timme, N.M., Bennett, N., Ripp, M., Lautzenhiser, E., and Beggs, J.M. (2016). Analysis of power laws, shape collapses, and neural complexity: new techniques and MATLAB support via the NCC toolbox. Front. Physiol. 7: 250.
