@@ -14,7 +14,7 @@ CONTENT
 
 - Get_NonSpatialAvalanches.m : Detection of neuronal avalanches using a spatially unconstraint definition.
 
-- neurons_type_and_coords.mat : exemple cell identities and coordinates.
+- neurons_type_and_coords.mat : example cell identities and coordinates.
 
 
 To study the power-law distributions of neuronal avalanches, please download the MATLAB NCC (Neural Complexity and Criticality) Toolbox, from Marshall et al. (2016) https://doi.org/10.3389/fphys.2016.00250
