@@ -22,4 +22,4 @@ To study the power-law distributions of neuronal avalanches, please download the
 References:
 Benayoun, M., Cowan, J.D., van Drongelen, W., and Wallace, E. (2010). Avalanches in a Stochastic Model of Spiking Neurons. PLoS Comput. Biol. 6, e1000846.
 Marshall, N., Timme, N.M., Bennett, N., Ripp, M., Lautzenhiser, E., and Beggs, J.M. (2016). Analysis of power laws, shape collapses, and neural complexity: new techniques and MATLAB support via the NCC toolbox. Front. Physiol. 7: 250.
-Wei, Z., Lin, B.-J., Chen, T.-W., Daie, K., Svoboda, K., and Druckmann, S. (2020). A comparison of neuronal population dynamics measured with calcium imaging and electrophysiology. PLoS Comput. Biol. 16(9): e1008198.
+Wei, Z., Lin, B.-J., Chen, T.-W., Daie, K., Svoboda, K., and Druckmann, S. (2020). A comparison of neuronal population dynamics measured with calcium imaging and electrophysiology. PLoS Comput. Biol. 16(9): e1008198
