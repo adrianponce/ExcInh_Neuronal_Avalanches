@@ -1,5 +1,7 @@
 ## CONTENT ##
 
+Codes to detect and analyze the neuronal avalanches, and to model them:
+
 - _avalanche_analysis_EI.m_ : This function constructs the activity tensor, calculates the connected components at each time frame, detects the propagating clusters (neuronal avalanches), and calculate the durations and sizes of avalanches.
 
 - _avalanche_timing_EI.m_ : This function computes the initiation and termination time of avalanches, together with the shape of the avalanches.
