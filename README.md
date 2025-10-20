@@ -1,4 +1,4 @@
-CONTENT
+## CONTENT ##
 
 - avalanche_analysis_EI.m : This function constructs the activity tensor, calculates the connected components at each time frame, detects the propagating clusters (neuronal avalanches), and calculate the durations and sizes of avalanches.
 
