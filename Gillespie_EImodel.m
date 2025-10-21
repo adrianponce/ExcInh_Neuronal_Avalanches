@@ -3,20 +3,25 @@ function [spike_times,spike_ids,network_state] = Gillespie_EImodel(W,response_fn
 % This function is based on Edward Wallace's code, publicly available here:
 % https://github.com/ewallace/stochsimcode
 %
-% Simulates a stochastic Wilson-Cowan model with the Gillespie algorithm and
-% arbitrary weight matrix W, inputs I, and transition rates (alpha and 
-% tranfert function), between times t_min and t_max.
+% This code simulates a stochastic Wilson-Cowan model with the Gillespie algorithm.
+% The connectivity of E and I neurons is given by matrix W (N-by-N, where N = NE + NI). 
+% The background inputs are given by I (N-dimensional). 
+% State transition rates are given by alpha and the tranfert function (response_fn, handle function)
+% 
 %
 % Inputs:
-% -W: is the weight matrix, n_neurons*n_neurons: W(i,j) is synaptic
-% weight TO the ith neuron FROM the jth
+% -W: connectivity matrix, N-by-N: W(i,j) is synaptic
+% weight from the jth neuron to the ith neuron.
 % -response_fn: handle for response function (sigmoid, hyperbolic tan, etc.)
-% -input is the net input, 1*n_neurons
-% -alpha: is the rate at which active neurons decay to being
-% quiescent, 1*n_neurons
-% -beta: is the height of the response function, i.e. the rate at
-% which saturated-input quiescent neurons become active, 1*n_neurons
-% -init_state: is the initial state vector, 2*n_neurons
+% -I: backgound inputs, N-dimensional array
+% -alpha:  rate at which active neurons decay to quiescent state, N-dimensional array
+% -beta: is the height of the response function, N-dimensional array
+% -init_state: is the initial state vector, 2-by-N
+%
+% Outputs:
+% - spike_times: spike times
+% - spike_ids: neuron IDs associated to spike times
+% - network_state: last network state (useful for batches)
 %
 % References:
 % Citation: Benayoun M, Cowan JD, van Drongelen W, Wallace E (2010) 
@@ -127,5 +132,6 @@ spikes = find(new_states(1,:));
 
 spike_times = times(spikes);
 spike_ids = updates(spikes);
+
 
 return
