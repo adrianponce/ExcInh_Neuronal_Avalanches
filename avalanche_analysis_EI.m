@@ -4,7 +4,7 @@ function [AvSize,Duration,AvSize_E,AvSize_I,Avalanche,Av_cluster_sizes,Av_Center
 % This code constructs the activity tensor,
 % calculates the connected components at each time frame,
 % detects the propagating clusters (neuronal avalanches), 
-% and calculate the durations and sizes of avalanches.
+% and calculates the durations and sizes of avalanches.
 % 
 % Inputs: 
 % - raster : binary activity N-by-T matrix, where N is the number of
@@ -303,6 +303,7 @@ Av_Center(S==0,:,:)=[];
     AvSize_I = AvSize_I(Life>1);
     
 return    
+
 
 
 
