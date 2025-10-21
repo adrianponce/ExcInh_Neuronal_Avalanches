@@ -111,7 +111,7 @@ for n = 1:n_batch
           sh = time(end);
           Fds = [Fds;fds];
           clear t fds
-          fprintf('fluo done... \n')
+          fprintf('fluorescence model done... \n')
        end       
 end
 
@@ -206,3 +206,4 @@ logy = log(Y);
 p = polyfit(logx,logy,1);
 sigmaNuZ_Space = 1/p(1);
 end
+
